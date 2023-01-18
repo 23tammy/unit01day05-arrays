@@ -7,7 +7,6 @@ public class ThreeArrayRange {
             if (i >= a[0] && i >= a[1] && i >= a[2]){
                 max = i;
             } 
-            
             if (i <= a[0] && i <= a[1] && i <= a[2]){
                 min = i;
             }
