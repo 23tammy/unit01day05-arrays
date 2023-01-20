@@ -10,15 +10,21 @@ public class ImmutableSort {
                 b[1] = i;
                 b[2] = i;
             }else if (i>= a[0] && i >= a[1] && i >= a[2]){
-                b[2] = i;
+                if (b[2] == i){
+                    b[1] = i;
+                }else{
+                    b[2] = 1;
+                }
             }else if (i<= a[0] && i <= a[1] && i <= a[2]){
-                b[0] = i;
+                if (b[0] == i){
+                    b[1] = i;
+                }else{
+                    b[0] = i;
+                }
             }else{
                 b[1] = i;
             }
         }
         System.out.println(Arrays.toString(b));
-
-        
     }
 }
