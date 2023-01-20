@@ -5,7 +5,6 @@ public class MutableSort {
         int min = 0;
         int mid = 0;
         int max = 0;
-
         for (int i : a){
             if (i== a[0] && i == a[1] && i == a[2]){
                 min = i;
