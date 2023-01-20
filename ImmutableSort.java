@@ -13,7 +13,7 @@ public class ImmutableSort {
                 if (b[2] == i){
                     b[1] = i;
                 }else{
-                    b[2] = 1;
+                    b[2] = i;
                 }
             }else if (i<= a[0] && i <= a[1] && i <= a[2]){
                 if (b[0] == i){
