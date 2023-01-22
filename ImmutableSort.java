@@ -1,8 +1,10 @@
+// good
 import java.util.Arrays;
 public class ImmutableSort {
     public static void main(String[] args) {
         int[] a = {2, 1, 3};
         int[] b = {0, 0, 0};
+        // NOTE: again, I'd use a variable name like 'num' or 'item' instead of 'i'
         for (int i : a){
             if (i== a[0] && i == a[1] && i == a[2]){
                 b[0] = i;
